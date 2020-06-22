@@ -4,7 +4,7 @@ let list1 = [1;2;3];;
 (* We can construct lists by adding head, to head, to head, ... to empty list *)
 let list2 = 10 :: (20 :: (30 :: []));;
 
-(* We can concatonate lists with '@' *)
+(* We can concatonate lists with '@' (or by using 'List.append') *)
 let list3 = list1 @ list2;;
 
 (* We can initialise lists with functions*)
@@ -29,4 +29,10 @@ let double_list = List.map double_int list3;;
 (* We can filter out numbers from a list with List.filter*)
 let number_list = List.init 10 (fun i -> i);;
 let even_only_list = List.filter (fun x -> x mod 2 == 0) number_list;;
+
+(* We can get the length of a list *)
+let list3_length = List.length list3;;
+
+(* We can check if 25 is in list3 (it isn't) *)
+let twenty_five_in_list3 = List.mem 25 list3;;
 
