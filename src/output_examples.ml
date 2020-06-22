@@ -14,3 +14,7 @@ let print_float = print_string (string_of_float(3.1415) ^ "\n")
 
 (* We can also use printf() to display stuff (decimals, strings, floats, floats 2 d.p. etc. *)
 let printf_example = Printf.printf "%d %s %f %.2f\n" 12 "hello" 123.456 123.456;;
+
+(* There's also a function which always ends with a new line, so no need for '\n' *)
+
+let final_hello = print_endline "Hello";;
