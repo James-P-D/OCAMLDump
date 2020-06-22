@@ -27,8 +27,6 @@ Most of this taken from running through the [Dan Grossman's tutorial from Washin
 [list_examples.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/list_examples.ml)  
 [mutable_examples.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/mutable_examples.ml)  
 [exception_examples.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/exception_examples.ml)  
-[XXXXXXXXXX.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/XXXXXXXXXX.ml)  
-[XXXXXXXXXX.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/XXXXXXXXXX.ml)  
 
 More list stuff in http://rigaux.org/language-study/syntax-across-languages-per-language/OCaml.html
 
