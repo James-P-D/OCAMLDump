@@ -13,6 +13,15 @@ let substring = String.sub some_string 5 4;;
 (* We can get the first index of a char in a string *)
 let index = String.rindex some_string 'a';;
 
+(* Be careful when comparing strings. '=' checks for structural equality (do they contain
+   the same string?) whereas '==' checks for physical equality (are they the same variable?) *)
+
+let check_strings1 = if ("foo" = "foo") then "same" else "different";;  (* same *)
+let check_strings2 = if ("foo" == "foo") then "same" else "different";; (* different *)
+let str = "foo";;
+let check_strings3 = if (str = str) then "same" else "different";;      (* same *)
+let check_strings4 = if (str == str) then "same" else "different";;     (* same *)
+
 (* We can declare characters*)
 let some_char = 'x';;
 

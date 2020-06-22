@@ -11,6 +11,7 @@ Most of this taken from running through the [Dan Grossman's tutorial from Washin
 [output_examples.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/output_examples.ml)  
 [math_examples.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/math_examples.ml)  
 [boolean_examples.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/boolean_examples.ml)  
+[string_examples.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/string_examples.ml)  
 [explicit_type_examples.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/explicit_type_examples.ml)  
 [local_variable_examples.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/local_variable_examples.ml)  
 [conditional_examples.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/conditional_examples.ml)
@@ -25,8 +26,7 @@ Most of this taken from running through the [Dan Grossman's tutorial from Washin
 [enum_examples.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/enum_examples.ml)  
 [list_examples.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/list_examples.ml)  
 [mutable_examples.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/mutable_examples.ml)  
-[XXXXXXXXXX.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/XXXXXXXXXX.ml)  
-[XXXXXXXXXX.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/XXXXXXXXXX.ml)  
+[exception_examples.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/exception_examples.ml)  
 [XXXXXXXXXX.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/XXXXXXXXXX.ml)  
 [XXXXXXXXXX.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/XXXXXXXXXX.ml)  
 
