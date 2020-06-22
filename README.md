@@ -1,5 +1,5 @@
 # OCAMLDump
-Dumping ground for OCAML
+Dumping ground for [OCAML](https://ocaml.org/)
 
 Most of this taken from running through the [Dan Grossman's tutorial from Washington University](https://homes.cs.washington.edu/~djg/teachingMaterials/gpl/lectures/camlTutorial.pdf), the offical [OCAML website](https://ocaml.org/learn/) and from the [learn-x-in-y-minutes website](https://learnxinyminutes.com/docs/ocaml/).
 
