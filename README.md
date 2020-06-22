@@ -10,6 +10,7 @@ Most of this taken from running through the [Dan Grossman's tutorial from Washin
 [comment_examples.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/comment_examples.ml)  
 [output_examples.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/output_examples.ml)  
 [math_examples.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/math_examples.ml)  
+[boolean_examples.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/boolean_examples.ml)  
 [explicit_type_examples.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/explicit_type_examples.ml)  
 [local_variable_examples.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/local_variable_examples.ml)  
 [conditional_examples.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/conditional_examples.ml)
@@ -25,6 +26,6 @@ Most of this taken from running through the [Dan Grossman's tutorial from Washin
 [mutable_examples.ml.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/mutable_examples.ml.ml)  
 [XXXXXXXXXX.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/XXXXXXXXXX.ml)  
 [XXXXXXXXXX.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/XXXXXXXXXX.ml)  
-[XXXXXXXXXX.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/XXXXXXXXXX.ml)  
 
+More list stuff in http://rigaux.org/language-study/syntax-across-languages-per-language/OCaml.html
 
