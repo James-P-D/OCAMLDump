@@ -35,4 +35,3 @@ let list3_length = List.length list3;;
 
 (* We can check if 25 is in list3 (it isn't) *)
 let twenty_five_in_list3 = List.mem 25 list3;;
-
