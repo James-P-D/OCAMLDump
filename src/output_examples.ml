@@ -11,3 +11,6 @@ let print_integer = print_string (string_of_int(4) ^ "\n")
 
 (* We can convert floats to string to display them *)
 let print_float = print_string (string_of_float(3.1415) ^ "\n")
+
+(* We can also use printf() to display stuff (decimals, strings, floats, floats 2 d.p. etc. *)
+let printf_example = Printf.printf "%d %s %f %.2f\n" 12 "hello" 123.456 123.456;;
