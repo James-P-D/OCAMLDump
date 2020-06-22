@@ -7,6 +7,8 @@ let do_twice f n = f(f(n));;
 print_string("2 doubled twice is " ^ (string_of_int(do_twice doubler 2)) ^ "!\n");;
 print_string("2 tripled twice is " ^ (string_of_int(do_twice tripler 2)) ^ "!\n");; 
 
+(* We can also return functions from functions *)
+
 let double_even_triple_odd x = 
   if ((x mod 2) == 0) then doubler else tripler;;
     
