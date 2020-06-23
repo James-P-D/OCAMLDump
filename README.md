@@ -25,8 +25,6 @@ Most of this taken from running through the [Dan Grossman's tutorial from Washin
 [pattern_matching_examples.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/pattern_matching_examples.ml)  
 [enum_examples.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/enum_examples.ml)  
 [list_examples.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/list_examples.ml)  
+[dictionary_examples.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/dictionary_examples.ml)  
 [mutable_examples.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/mutable_examples.ml)  
 [exception_examples.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/exception_examples.ml)  
-
-More list stuff in http://rigaux.org/language-study/syntax-across-languages-per-language/OCaml.html
-
