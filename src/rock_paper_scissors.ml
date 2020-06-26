@@ -41,10 +41,6 @@ let check_result (user_choice:rps_type) (computer_choice:rps_type) =
   print_endline ("Computer chose " ^ enum_to_string(computer_choice));
   UserWins;;
 
-let not_exit (e:rps_type) =
-  print_endline ("User chose!!!!!! " ^ enum_to_string(e));
-  if (e == Exit) then (print_endline ("FALSE"); false) else (print_endline ("TRUE"); true);;
-
 let rps() = 
   Random.self_init();
   
@@ -53,10 +49,9 @@ let rps() =
   let draws = ref 0 in
   
   let user_choice = ref Rock in
-  while (not_exit(!user_choice)) do
-    (user_choice) := read_user_choice();
+  while ((!user_choice) != Exit) do
+    user_choice := read_user_choice();
     let computer_choice = get_computer_choice() in
-    if (!user_choice == Exit) then print_endline("We want to leave") else print_endline("We want to stay");
     match (check_result !user_choice computer_choice) with
     | UserWins -> user_wins := (!user_wins) + 1
     | ComputerWins -> computer_wins := (!computer_wins) + 1
