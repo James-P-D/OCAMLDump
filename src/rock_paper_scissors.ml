@@ -1,5 +1,7 @@
 type rps_type = Rock | Paper | Scissors | Exit;;
 
+type result_type = UserWins | ComputerWins | Draw;;
+
 let char_to_enum c =
   match c with
   | 'r' -> Rock
@@ -27,8 +29,22 @@ let get_computer_choice() =
   let n = Random.int 3 in
   int_to_enum n;;
 
+let check_result (user_choice:rps_type) (computer_choice:rps_type) =
+  UserWins;;
+
 let rps() = 
   Random.self_init();
-  get_computer_choice();; 
+  
+  let user_wins = ref 0 in
+  let computer_wins = ref 0 in
+  
+  let user_choice = ref Rock in
+  while (!user_choice != Exit) do
+    let user_choice = read_user_choice() in
+    let computer_choice = get_computer_choice in
+    #match (check_result(user_choice computer_choice)) with
+    #| UserWins -> user_wins := (!user_wins) + 1
+    #| ComputerWins -> computer_wins := (!computer_wins) + 1
+  done;;
 
 rps();;
