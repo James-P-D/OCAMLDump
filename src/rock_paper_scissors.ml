@@ -62,9 +62,9 @@ let rock_paper_scissors_loop() =
     if ((!user_choice) != Exit) then (
       let computer_choice = get_computer_choice() in
       match (check_result !user_choice computer_choice) with
-      | UserWins -> (user_wins := (!user_wins) + 1)
-      | ComputerWins -> (computer_wins := (!computer_wins) + 1)
-      | Draw -> (draws := (!draws) + 1)
+      | UserWins -> (print_endline "User won!"; user_wins := (!user_wins) + 1)
+      | ComputerWins -> (print_endline "Computer won!"; computer_wins := (!computer_wins) + 1)
+      | Draw -> (print_endline "Draw!"; draws := (!draws) + 1)
     );
   done;
   (user_wins, computer_wins, draws);;
