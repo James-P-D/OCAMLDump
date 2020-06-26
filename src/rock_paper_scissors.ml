@@ -74,3 +74,5 @@ let play_rock_paper_scissors() =
   print_endline ("User wins     : " ^ string_of_int(!user_wins));
   print_endline ("Computer wins : " ^ string_of_int(!computer_wins));
   print_endline ("Draws wins    : " ^ string_of_int(!draws));;
+  
+let rps() = play_rock_paper_scissors();;

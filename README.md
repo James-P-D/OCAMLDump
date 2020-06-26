@@ -28,3 +28,9 @@ Most of this taken from running through the [Dan Grossman's tutorial from Washin
 [dictionary_examples.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/dictionary_examples.ml)  
 [mutable_examples.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/mutable_examples.ml)  
 [exception_examples.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/exception_examples.ml)  
+
+## Rock, Paper Scissors
+
+After a lot of playing around, managed to get [Rock, Paper, Scissors](https://github.com/James-P-D/OCAMLDump/blob/master/src/rock_paper_scissors.ml) working..
+
+![Screenshot](https://github.com/James-P-D/OCAMLDump/blob/master/rock_paper_scissors.gif)
