@@ -15,11 +15,12 @@ let int_to_enum n =
   | 1 -> Paper
   | n -> Scissors;;
 
-let enum_to_string e =
+let enum_to_string (e:rps_type) =
   match e with
   | Rock -> "Rock" 
   | Paper -> "Paper"
-  | e -> "Scissors";;
+  | Scissors -> "Scissors"
+  | Exit -> "Exit";;
 
 let rec read_user_choice() =
   print_endline "Enter (r)ock, (p)aper, (s)cissors, or e(x)it.";
@@ -40,6 +41,10 @@ let check_result (user_choice:rps_type) (computer_choice:rps_type) =
   print_endline ("Computer chose " ^ enum_to_string(computer_choice));
   UserWins;;
 
+let not_exit (e:rps_type) =
+  print_endline ("User chose!!!!!! " ^ enum_to_string(e));
+  if (e == Exit) then (print_endline ("FALSE"); false) else (print_endline ("TRUE"); true);;
+
 let rps() = 
   Random.self_init();
   
@@ -48,10 +53,11 @@ let rps() =
   let draws = ref 0 in
   
   let user_choice = ref Rock in
-  while (!user_choice != Exit) do
-    let user_choice = read_user_choice() in
+  while (not_exit(!user_choice)) do
+    (user_choice) := read_user_choice();
     let computer_choice = get_computer_choice() in
-    match (check_result user_choice computer_choice) with
+    if (!user_choice == Exit) then print_endline("We want to leave") else print_endline("We want to stay");
+    match (check_result !user_choice computer_choice) with
     | UserWins -> user_wins := (!user_wins) + 1
     | ComputerWins -> computer_wins := (!computer_wins) + 1
     | Draw -> draws := (!draws) + 1
