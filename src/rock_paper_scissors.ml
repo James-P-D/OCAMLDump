@@ -15,6 +15,12 @@ let int_to_enum n =
   | 1 -> Paper
   | n -> Scissors;;
 
+let enum_to_string e =
+  match e with
+  | Rock -> "Rock" 
+  | Paper -> "Paper"
+  | e -> "Scissors";;
+
 let rec read_user_choice() =
   print_endline "Enter (r)ock, (p)aper, (s)cissors, or e(x)it.";
   let str = input_line stdin in
@@ -30,6 +36,8 @@ let get_computer_choice() =
   int_to_enum n;;
 
 let check_result (user_choice:rps_type) (computer_choice:rps_type) =
+  print_endline ("User chose " ^ enum_to_string(user_choice));
+  print_endline ("Computer chose " ^ enum_to_string(computer_choice));
   UserWins;;
 
 let rps() = 
@@ -37,14 +45,17 @@ let rps() =
   
   let user_wins = ref 0 in
   let computer_wins = ref 0 in
+  let draws = ref 0 in
   
   let user_choice = ref Rock in
   while (!user_choice != Exit) do
     let user_choice = read_user_choice() in
-    let computer_choice = get_computer_choice in
-    #match (check_result(user_choice computer_choice)) with
-    #| UserWins -> user_wins := (!user_wins) + 1
-    #| ComputerWins -> computer_wins := (!computer_wins) + 1
-  done;;
+    let computer_choice = get_computer_choice() in
+    match (check_result user_choice computer_choice) with
+    | UserWins -> user_wins := (!user_wins) + 1
+    | ComputerWins -> computer_wins := (!computer_wins) + 1
+    | Draw -> draws := (!draws) + 1
+  done;
+  (user_wins, computer_wins, draws);;
 
 rps();;
