@@ -23,6 +23,7 @@ let enum_to_string (e:rps_type) =
   | Exit -> "Exit";;
 
 let rec read_user_choice() =
+  print_endline "";
   print_endline "Enter (r)ock, (p)aper, (s)cissors, or e(x)it.";
   let str = input_line stdin in
   if ((String.length(str) > 0) && ((str.[0] == 'r') || (str.[0] == 'p') || (str.[0] == 's') || (str.[0] == 'x'))) then char_to_enum(str.[0]) else read_user_choice();; 
@@ -39,9 +40,16 @@ let get_computer_choice() =
 let check_result (user_choice:rps_type) (computer_choice:rps_type) =
   print_endline ("User chose " ^ enum_to_string(user_choice));
   print_endline ("Computer chose " ^ enum_to_string(computer_choice));
-  UserWins;;
+  match (user_choice, computer_choice) with
+  | (Rock, Scissors) -> UserWins
+  | (Paper, Rock) -> UserWins
+  | (Scissors, Paper) -> UserWins    
+  | (Scissors, Rock) -> ComputerWins
+  | (Rock, Paper) -> ComputerWins
+  | (Paper, Scissors) -> ComputerWins
+  | (user_choice, computer_choice) -> Draw;;
 
-let rps() = 
+let rock_paper_scissors_loop() = 
   Random.self_init();
   
   let user_wins = ref 0 in
@@ -51,12 +59,18 @@ let rps() =
   let user_choice = ref Rock in
   while ((!user_choice) != Exit) do
     user_choice := read_user_choice();
-    let computer_choice = get_computer_choice() in
-    match (check_result !user_choice computer_choice) with
-    | UserWins -> user_wins := (!user_wins) + 1
-    | ComputerWins -> computer_wins := (!computer_wins) + 1
-    | Draw -> draws := (!draws) + 1
+    if ((!user_choice) != Exit) then (
+      let computer_choice = get_computer_choice() in
+      match (check_result !user_choice computer_choice) with
+      | UserWins -> (user_wins := (!user_wins) + 1)
+      | ComputerWins -> (computer_wins := (!computer_wins) + 1)
+      | Draw -> (draws := (!draws) + 1)
+    );
   done;
   (user_wins, computer_wins, draws);;
 
-rps();;
+let play_rock_paper_scissors() =
+  let (user_wins, computer_wins, draws) = rock_paper_scissors_loop() in
+  print_endline ("User wins     : " ^ string_of_int(!user_wins));
+  print_endline ("Computer wins : " ^ string_of_int(!computer_wins));
+  print_endline ("Draws wins    : " ^ string_of_int(!draws));;
