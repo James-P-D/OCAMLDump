@@ -1,3 +1,6 @@
+(* VERY IMPORTANT! print_string() does flush the stdout buffer! print_endline() and print_newline() do!
+   we can also flush with 'stdout flush' *)
+   
 let display_hello = print_string "Hello, World!\n"  
 let hello_only = "Hello, "
 let world_only = "World!\n"
