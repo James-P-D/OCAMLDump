@@ -28,6 +28,7 @@ Most of this taken from running through the [Dan Grossman's tutorial from Washin
 [dictionary_examples.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/dictionary_examples.ml)  
 [mutable_examples.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/mutable_examples.ml)  
 [exception_examples.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/exception_examples.ml)  
+[circular_reference.ml](https://github.com/James-P-D/OCAMLDump/blob/master/src/circular_reference.ml)  
 
 ## Rock, Paper Scissors
 
